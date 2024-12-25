@@ -1,0 +1,66 @@
+.dropdown-left {
+  /* border: 3px solid red; */
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  border-right: 1px gray solid;
+  padding: 30px 50px 20px 100px;
+}
+
+.dropdown-right {
+  padding: 0;
+  margin-top: 15px;
+  margin-left: 70px;
+  display: block;
+  flex-direction: column;
+  /* border: 3px solid red; */
+  list-style: none;
+  height: fit-content;
+  box-sizing: border-box;
+}
+
+.shop-layout {
+  grid-template-columns: 100%; /* Left div takes full width */
+}
+
+.shop-layout .dropdown-right {
+  display: none;
+}
+
+.discover-layout .dropdown-left {
+  display: none;
+}
+.discover-layout .dropdown-right {
+  width: 100vw;
+}
+
+.discover-features {
+  display: grid !important;
+  grid-template-columns: repeat(3, 1fr); /* 3 columns */
+  width: 3000px;
+  /* border: 2px solid red; */
+  gap: 10px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  margin-left: 70px;
+}
+
+.discover-features li {
+  padding: 10px;
+  color: rgb(20, 20, 20);
+}
+
+.dropdown li:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.discover-features li:nth-child(-n + 3) {
+  color: rgb(102, 98, 98); /* Darker color for emphasis */
+  text-transform: uppercase; /* Optional: Make text uppercase */
+  /* border-bottom: 2px solid gray;   */
+  padding-bottom: 5px;
+  margin-bottom: 10px;
+  cursor: default !important;
+  text-decoration: none !important;
+}

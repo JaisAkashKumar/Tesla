@@ -1,24 +1,19 @@
-import logo from './logo.svg';
-import './App.css';
+import Carousel from "./components/Carousel";
+import HomeCar from "./components/HomeCar";
+import HomeCars from "./components/HomeCars";
+import Navbar from "./components/Navbar";
+import image from "./images/tesla-robotaxi.jpg";
 
 function App() {
+  const handleButtonClick = () => {
+    alert("You clicked the button!");
+  };
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Navbar />
+      <Carousel />
+      <HomeCars />
+    </>
   );
 }
 

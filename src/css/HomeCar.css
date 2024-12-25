@@ -1,0 +1,80 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.fullscreen-container {
+  position: relative;
+  height: 120vh;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+}
+
+.fullscreen-image {
+  border-radius: 6px;
+  margin: auto;
+  width: 94%;
+  height: 96%;
+  object-fit: cover;
+}
+
+.large-text-overlay {
+  position: absolute;
+  top: 10%; /* Position the text near the top */
+  /* left: 50%; */
+  /* transform: translateX(-50%); */
+  color: white;
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: bold;
+  z-index: 2; /* Ensures the text stays above the image */
+}
+
+.small-text-overlay {
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translateX(-50%);
+  color: white;
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: bold;
+  z-index: 2; /* Ensures the text stays above the image */
+}
+
+.small-text-overlay h4 {
+  margin-bottom: 10px;
+}
+
+/* .small-text-overlay hr {
+  border: 1px solid white;
+  margin: 0 auto;
+} */
+
+.button-overlay {
+  position: absolute;
+  bottom: 10%; /* Position the button near the bottom */
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 2; /* Ensures the button stays above the image */
+}
+
+.overlay-button {
+  background-color: white;
+  width: 280px;
+  height: 40px;
+  color: #ffff;
+  background-color: rgb(66, 66, 204);
+  border: none;
+  padding: 8px 30px;
+  border-radius: 8px;
+  font-weight: bold;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.overlay-button:hover {
+  background-color: blue;
+}

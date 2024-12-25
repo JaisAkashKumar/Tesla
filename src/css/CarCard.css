@@ -1,0 +1,17 @@
+.img-resp {
+  max-width: 100%;
+  height: auto;
+}
+
+.car-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+
+.car-text div {
+  display: flex;
+  gap: 2px;
+}
